@@ -1,0 +1,3 @@
+name: virt-template
+runtime: nodejs
+description: create a qemu template in proxmox

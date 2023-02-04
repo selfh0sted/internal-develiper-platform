@@ -1,0 +1,21 @@
+apiVersion: k0sctl.k0sproject.io/v1beta1
+kind: Cluster
+metadata:
+  name: k0s-cluster
+spec:
+  hosts:
+    - ssh:
+        address: 10.0.123.1
+        user: ubuntu
+        port: 22
+        keyPath: ~/.ssh/id_ed25519
+      role: controller+worker
+    - ssh:
+        address: 10.0.123.2
+        user: ubuntu
+        port: 22
+        keyPath: ~/.ssh/id_ed25519
+      role: worker
+  k0s:
+    version: 1.26.0+k0s.0
+    dynamicConfig: false

@@ -1,0 +1,5 @@
+config:
+  buildserver:hostname: '192.168.1.5'
+  buildserver:username: 'root'
+  buildserver:password:
+    secure: ...

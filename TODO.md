@@ -1,0 +1,3 @@
+- integrate k0sctl for provisiong and deleting a cluster, as well as pulling the kubeconfig
+- clean up various selfhosted/k8s repos
+- check for "magic variables" in code and refernce them by variable or pulumi output
